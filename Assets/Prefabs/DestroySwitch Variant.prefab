@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5935940616827999865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7472482071976964176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e08931de10aa084eb04c5ddb3113675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyed: {fileID: 0}
+--- !u!1001 &6421388929494837623
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4516773903108086055, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_Name
+      value: DestroySwitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086058, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086056, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: spawnloc.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086056, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: spawned
+      value: 
+      objectReference: {fileID: 4125064092483257885, guid: b9cfe5ecf5bf0cd4e8451bbef7ea4ba9,
+        type: 3}
+    - target: {fileID: 4516773903108086056, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: spawnloc.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516773903108086059, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4516773903108086056, guid: 4742be3b8ea7bf746a4adf1eabec7a63, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 4742be3b8ea7bf746a4adf1eabec7a63, type: 3}
+--- !u!1 &7472482071976964176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4516773903108086055, guid: 4742be3b8ea7bf746a4adf1eabec7a63,
+    type: 3}
+  m_PrefabInstance: {fileID: 6421388929494837623}
+  m_PrefabAsset: {fileID: 0}
