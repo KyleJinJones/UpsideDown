@@ -82,6 +82,14 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("MovingLeft", false);
         }
+        if(!jump && rb.velocity.y < 0)
+        {
+            anim.SetBool("Falling", true);
+        }
+        else
+        {
+            anim.SetBool("Falling", false);
+        }
     }
     //Restarts the current level if the player hits r
     private void restartlevel()
