@@ -18,12 +18,14 @@ public class PlayerController : MonoBehaviour
     private float dashtimer=0.0f;
     [SerializeField]private bool alreadydashed = false;
     private float dashingdir = 0;
+    private Animator anim;
 
     //Handles Player Movement and detecting reset commands from the player
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         groundmask = LayerMask.GetMask("Ground");
+        anim = GetComponent<Animator>();
     }
 
     //
@@ -32,7 +34,8 @@ public class PlayerController : MonoBehaviour
         //handles general movement, and jumping utilizing raycasting to determine if player is on the ground
         Vector2 movement = new Vector2(Input.GetAxisRaw("Horizontal") * speed, rb.velocity.y);
         rb.velocity = movement;
-
+        animateplayer(movement);
+        
 
         //Handles determining if the player is on the ground, Uses two raycasts instead of one to ensure the player is able to reliably jump at edges
         RaycastHit2D groundcheck1 = Physics2D.Raycast(transform.position + new Vector3(.28f, 0, 0), new Vector2(0, -1.0f), 1.1f, groundmask);
@@ -61,6 +64,25 @@ public class PlayerController : MonoBehaviour
     
     }
 
+    private void animateplayer(Vector3 movement)
+    {
+        if (movement.x > 0.0f)
+        {
+            anim.SetBool("MovingRight", true);
+        }
+        else
+        {
+            anim.SetBool("MovingRight", false);
+        }
+        if (movement.x < -0.0f)
+        {
+            anim.SetBool("MovingLeft", true);
+        }
+        else
+        {
+            anim.SetBool("MovingLeft", false);
+        }
+    }
     //Restarts the current level if the player hits r
     private void restartlevel()
     {
@@ -77,12 +99,12 @@ public class PlayerController : MonoBehaviour
         if (transform.position.y <= -7)
         {
             
-            transform.position= new Vector3(transform.position.x, 11.5f, 0);
+            rb.position= new Vector3(transform.position.x, 11.5f, 0);
         }
 
         if (transform.position.y >= 12)
         {
-            transform.position= new Vector3(transform.position.x, -6.5f, 0);
+            rb.position= new Vector3(transform.position.x, -6.5f, 0);
         }
         
     }
